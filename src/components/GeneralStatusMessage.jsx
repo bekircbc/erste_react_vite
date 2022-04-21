@@ -3,7 +3,6 @@ export const GeneralStatusMessage = ({
   internalText,
   externalText,
 }) => {
-  console.log(internalText);
   let message = "";
   switch (status) {
     case "internalUser":
