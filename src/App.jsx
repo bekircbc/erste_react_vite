@@ -35,6 +35,7 @@ function App() {
           </ul>
         </>
       )}
+      <Footer />
     </div>
   );
 }
