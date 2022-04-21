@@ -5,7 +5,7 @@ export const Employees = () => {
     <ul>
       {data.map((emp, i) => {
         return (
-          <li>
+          <li key={i}>
             {emp.firstName} {emp.lastName}
           </li>
         );
