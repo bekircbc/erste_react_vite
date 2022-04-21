@@ -1,7 +1,6 @@
 import data from "../data/data.json";
 
-export const Employees = (emp, status) => {
-  console.log(status === "internalUser");
+export const Employees = (status) => {
   return (
     <div className="employees">
       {data.map((emp, i) => {
