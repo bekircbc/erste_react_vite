@@ -1,11 +1,19 @@
 body {
   background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .App {
     color: red;
     padding: 20px;
     text-align: center;
     font-size: 1.6rem;
+  }
+  li {
+    background-color: white;
+    width: 60vw;
+    list-style: none;
   }
 }
 

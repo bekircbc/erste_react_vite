@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.scss";
 
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import data from "./data/data.json";
 
 function App() {
@@ -11,9 +13,7 @@ function App() {
   // const colors = [];
   return (
     <div className="App">
-      <h1>S Liebe Gmbh</h1>
-      <img src="../public/images/icon.png" alt="logo" />
-      <h2>Our Employee List</h2>
+      <Header />
       <ul>
         {data.map((emp, i) => {
           return (
