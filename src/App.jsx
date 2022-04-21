@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header status={status} />
-      <Employees key={index} emp={emp} status={status} />
+      <Employees emp={emp} status={status} />
       <Footer status={status} />
     </div>
   );
