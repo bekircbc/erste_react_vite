@@ -4,7 +4,6 @@ import "./App.scss";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Employees } from "./components/Employees";
-import { Colors } from "./components/Colors";
 
 const status = `internalUser`;
 
@@ -14,9 +13,8 @@ function App() {
   return (
     <div className="App">
       <Header status={status} />
-      <Employees />
-      <Colors />
-      <Footer />
+      <Employees status={status} />
+      <Footer status={status} />
     </div>
   );
 }

@@ -16,7 +16,9 @@ export const Header = ({ status }) => {
     <>
       <h1>S Liebe Gmbh</h1>
       <img src="../public/images/icon.png" alt="logo" />
-      <h1>Employee Site</h1>
+
+      <h1>{status === "internalUser" ? `Employee Site` : `Customer Site`}</h1>
+
       <div className="message">{message}</div>
     </>
   );

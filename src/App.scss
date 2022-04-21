@@ -3,9 +3,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   .App {
-    color: red;
+    color: grey;
     padding: 20px;
     text-align: center;
     font-size: 1.6rem;
