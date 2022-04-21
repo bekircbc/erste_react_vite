@@ -1,15 +1,21 @@
 import data from "../data/data.json";
 
-export const Employees = () => {
+export const Employees = (emp, status) => {
   return (
-    <ul>
+    <div className="employees">
       {data.map((emp, i) => {
         return (
-          <li key={i}>
-            {emp.firstName} {emp.lastName}
-          </li>
+          <div className="employee" key={i}>
+            <div className="name">
+              {emp.firstName} {emp.lastName}
+            </div>
+            <div className="title">{emp.title}</div>
+            {status === "internalUser" && (
+              <div className="notes">{emp.notes}</div>
+            )}
+          </div>
         );
       })}
-    </ul>
+    </div>
   );
 };

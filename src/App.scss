@@ -9,14 +9,22 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 1.6rem;
-  }
-  li {
-    background-color: white;
-    width: 60vw;
-    list-style: none;
+
+    .employee {
+      background-color: #222;
+      padding: 10px;
+      margin: 10px 0 10px 0;
+      .title {
+        color: rgb(177, 177, 100);
+      }
+      .notes {
+        font-size: 0.8rem;
+        color: #777;
+        font-style: italic;
+      }
+    }
   }
 }
-
 // .App-logo {
 //   height: 40vmin;
 //   pointer-events: none;
