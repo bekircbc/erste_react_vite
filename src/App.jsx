@@ -6,14 +6,14 @@ import { Footer } from "./components/Footer";
 import { Employees } from "./components/Employees";
 import { Colors } from "./components/Colors";
 
-const userIsExternal = false;
+const status = `externalUser`;
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Header userIsExternal={userIsExternal} />
+      <Header status={status} />
       <Employees />
       <Colors />
       <Footer />
