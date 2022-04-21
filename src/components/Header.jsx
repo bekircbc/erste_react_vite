@@ -6,6 +6,7 @@ export const Header = ({ status }) => {
       <div className="firmnamelogo">
         <img src="../public/images/icon.png" alt="logo" />
         <h1>S Liebe Gmbh</h1>
+        <h2>{status === "internalUser" ? "Employee Page" : "Customer Page"}</h2>
       </div>
       <GeneralStatusMessage
         status={status}
