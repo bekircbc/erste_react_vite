@@ -1,6 +1,6 @@
 import data from "../data/data.json";
 
-export const Employees = (status) => {
+export const Employees = (props) => {
   return (
     <div className="employees">
       {data.map((emp, i) => {
@@ -10,7 +10,7 @@ export const Employees = (status) => {
               {emp.firstName} {emp.lastName}
             </div>
             <div className="title">{emp.title}</div>
-            {status === `internalUser` && (
+            {props.status === `internalUser` && (
               <div className="notes">{emp.notes}</div>
             )}
           </div>
